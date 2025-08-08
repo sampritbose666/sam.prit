@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Samprit's Web Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Samprit's Web Work</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+            <button id="darkModeToggle">☀️</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Welcome to My Digital Playground</h1>
+                <p>Exploring the intersection of creativity and code. Here you'll find a collection of my work, thoughts, and professional journey.</p>
+                <a href="projects.html" class="btn">View My Projects</a>
+            </section>
+
+            <section class="splide" aria-label="Image Carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="C:\Users\Samprit\OneDrive\Desktop\html project\assests\home.png" alt="Placeholder Image 1"></li>
+                        <li class="splide__slide"><img src="C:\Users\Samprit\OneDrive\Desktop\html project\assests\mntn.jpg" alt="Placeholder Image 2"></li>
+                        <li class="splide__slide"><img src="C:\Users\Samprit\OneDrive\Desktop\html project\assests\me.jpeg" alt="Placeholder Image 3"></li>
+                        <li class="splide__slide"><img src="C:\Users\Samprit\OneDrive\Desktop\html project\assests\abstract.png" alt="Placeholder Image 4"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samprit Bose. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            autoplay: true,
+            interval: 4000,
+            pauseOnHover: true,
+        }).mount();
+    </script>
+</body>
+</html>
